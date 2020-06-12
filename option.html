@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', () => {
+               
+                document.querySelectorAll('.color-change').forEach(option => {
+                    option.onclick = () => {
+                        document.querySelector('#con1').style.color = option.dataset.color;
+                    };
+                });
+
+            });
+        </script>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1 id="con1">Hello!</h1>
+        <select>
+            <option class="color-change" data-color="red">Red</option>
+            <option class="color-change" data-color="green">Green</option>
+            <option class="color-change" data-color="blue">Blue</option>
+            <option class="color-change" data-color="yellow">Yellow</option>
+            <option class="color-change" data-color="black">Black</option>
+        </select>
+        
+    </body>
+</html>
